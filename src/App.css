@@ -4,6 +4,14 @@
     --text-clor: #444444;
 }
 
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
 .btn, .btn-outline, .btn-disabled {
     display: flex;
     justify-content: space-around;
@@ -46,4 +54,8 @@
 
     80% {transform: translateX(-1.5px);}
     100% {transform: translateX(1.5px);}
+}
+
+.padding-default {
+  padding: 30px 20px 20px 20px;
 }

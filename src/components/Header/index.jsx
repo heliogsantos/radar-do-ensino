@@ -11,15 +11,13 @@ const Header = () => {
   return (
     <header>
         <Logo />
-        <div className="menu">
-          <ul>    
-            {
-              Menu.map((listMenu, index) => (
-                  <li className={checkMenuRegister(listMenu)} key={index}>{listMenu}</li>
-              ))
-            }
-          </ul>
-        </div>
+        <ul>    
+          {
+            Menu.map((listMenu, index) => (
+                <li className={checkMenuRegister(listMenu)} key={index}>{listMenu}</li>
+            ))
+          }
+        </ul>
     </header>
     );
 }

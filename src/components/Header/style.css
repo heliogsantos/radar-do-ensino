@@ -8,22 +8,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
-header .menu {
+header ul {
     display: flex;
-    width: 70%;
-    justify-content: flex-end;
 }
 
-header .menu ul {
+header ul {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-header .menu li {
+header ul li {
     margin: 0 10px;
     cursor: pointer;
     font-weight: 400;
@@ -33,7 +34,11 @@ header .menu li {
     color: var(--text-clor);
 }
 
-header .menu li::after {
+header ul li:last-child {
+  margin: 0;
+}
+
+header ul li::after {
   display: none;
   content: '';
   width: 70%;
@@ -46,10 +51,10 @@ header .menu li::after {
   transition: 0.6s linear;
 }
 
-header .menu li:hover::after {
+header ul li:hover::after {
   display: block;
 } 
 
-header .menu li:last-child::after {
+header ul li:last-child::after {
   display: none;
 }

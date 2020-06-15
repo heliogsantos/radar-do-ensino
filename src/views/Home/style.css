@@ -1,0 +1,41 @@
+.wraper-home {
+  height: 100%;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form .btn {
+  margin-left: 10px;
+  padding: 10px 30px;
+}
+
+form .field input {
+  border: 1px solid var(--text-clor);
+  border-radius: 4px;
+  width: 100%;
+  resize: none;
+  padding: 25px 20px 25px 20px;
+  border-radius: 4px;
+  outline: none;
+  max-width: 500px;
+  width: 470px;
+}
+
+.field  {
+  display: flex;
+}
+
+.call {
+  margin-top: 80px;
+ }
+ 
+ .call h1 {
+   color: var(--text-clor);
+   font-weight: 900;
+   font-size: 50px;
+   text-align: center;
+ }
