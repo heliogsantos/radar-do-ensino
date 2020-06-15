@@ -10,26 +10,6 @@ header {
     align-items: center;
 }
 
-header .logo {
-  display: flex;
-  position: relative;
-  top: 7px;
-}
-
-header .logo span, header .logo span strong {
-    font-size: 22px;
-    font-weight: 900;
-    position: relative;
-    top: -6px;
-    color: #ffffff;
-    padding: 2px 4px;
-    background-color: var(--detail-color);
-}
-
-header .logo span strong  {
-  background-color: var(--primary-color);
-}
-
 header .menu {
     display: flex;
     width: 70%;

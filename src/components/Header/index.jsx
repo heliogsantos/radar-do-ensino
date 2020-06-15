@@ -2,6 +2,7 @@ import React from 'react';
 
 import './style.css';
 import Menu from './Menu';
+import Logo from '../../shared/Logo';
 
 const Header = () => {
 
@@ -9,14 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo">
-        <span>
-          <strong>Ra</strong>
-          dar
-            <strong>do</strong>
-          ensino
-        </span>
-      </div>
+        <Logo />
         <div className="menu">
           <ul>    
             {

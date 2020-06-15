@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  position: relative;
+  top: 7px;
+}
+
+.logo span, .logo span strong {
+    font-size: 22px;
+    font-weight: 900;
+    position: relative;
+    top: -6px;
+    color: #ffffff;
+    padding: 2px 4px;
+    background-color: var(--detail-color);
+}
+
+.logo span strong  {
+  background-color: var(--primary-color);
+}
