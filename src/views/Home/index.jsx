@@ -27,8 +27,14 @@ const Home = () => {
           <button onClick={handleSearch} type="submit" className="btn btn-animation">buscar</button>
         </form>
       </div>
-
       <Card />
+
+      <div className="sub-title">
+        <h4>Aprenda <br/>
+        tudo o que quiser</h4>
+        <p>Torne-se um mestre na arte da cozinha ou uma estrela nos palcos! Torne-se um mestre na arte da cozinha ou uma estrela.</p>
+      </div>
+
     </div>
   )
 }
