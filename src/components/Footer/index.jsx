@@ -4,7 +4,9 @@ import './style.css';
 
 const Footer = () => {
   return (
-    <p>Footer</p>
+    <footer>
+      <p>© 2020 Radardoensino, as melhores escolas do Brasil</p>
+    </footer>
   );
 }
 
