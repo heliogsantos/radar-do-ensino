@@ -57,3 +57,7 @@ form .field input {
   color: var(--text-color);
   max-width: 700px;
  }
+
+ .founder-content {
+   padding: 70px 0;
+ }

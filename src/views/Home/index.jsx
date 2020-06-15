@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import './style.css'
 import Card from '../../components/Card'
+import Founder from '../../shared/Founder'
 
 const Home = () => {
 
@@ -28,13 +29,14 @@ const Home = () => {
         </form>
       </div>
       <Card />
-
       <div className="sub-title">
         <h4>Aprenda <br/>
         tudo o que quiser</h4>
         <p>Torne-se um mestre na arte da cozinha ou uma estrela nos palcos! Torne-se um mestre na arte da cozinha ou uma estrela.</p>
       </div>
-
+      <div className="founder-content">
+        <Founder />
+      </div>
     </div>
   )
 }
