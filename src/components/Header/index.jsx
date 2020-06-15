@@ -10,7 +10,12 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <span>Radar<strong>do</strong>ensino</span>
+        <span>
+          <strong>Ra</strong>
+          dar
+            <strong>do</strong>
+          ensino
+        </span>
       </div>
         <div className="menu">
           <ul>    

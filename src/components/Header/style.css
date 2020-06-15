@@ -10,15 +10,24 @@ header {
     align-items: center;
 }
 
-header .logo span, header .logo span strong {
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 900;
+header .logo {
+  display: flex;
+  position: relative;
+  top: 7px;
 }
 
-header .logo span strong {
-    color: var(--detail-color);
+header .logo span, header .logo span strong {
     font-size: 22px;
+    font-weight: 900;
+    position: relative;
+    top: -6px;
+    color: #ffffff;
+    padding: 2px 4px;
+    background-color: var(--detail-color);
+}
+
+header .logo span strong  {
+  background-color: var(--primary-color);
 }
 
 header .menu {
@@ -41,6 +50,7 @@ header .menu li {
     font-size: 13px;
     text-transform: uppercase;
     position: relative;
+    color: var(--text-clor);
 }
 
 header .menu li::after {
