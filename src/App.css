@@ -41,7 +41,7 @@
     cursor: unset;
 }
 
-.btn-aimation:hover {
+.btn-animation:hover {
     animation: animeButton .2s linear;
 }
 

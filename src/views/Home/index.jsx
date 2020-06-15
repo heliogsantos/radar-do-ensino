@@ -24,7 +24,7 @@ const Home = () => {
           <div className="field">
             <input onChange={handleSearchText} type="text" placeholder="Cidade ou bairro"/>
           </div>
-          <button onClick={handleSearch} type="submit" className="btn">buscar</button>
+          <button onClick={handleSearch} type="submit" className="btn btn-animation">buscar</button>
         </form>
       </div>
 

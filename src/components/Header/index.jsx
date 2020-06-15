@@ -6,7 +6,7 @@ import Logo from '../../shared/Logo';
 
 const Header = () => {
 
-  const checkMenuRegister = (menuRegister) => menuRegister === 'CADASTRE-SE' ? 'btn btn-aimation' : null;
+  const checkMenuRegister = (menuRegister) => menuRegister === 'CADASTRE-SE' ? 'btn btn-animation' : null;
 
   return (
     <header>
