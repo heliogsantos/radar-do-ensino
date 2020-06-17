@@ -6,9 +6,13 @@
 
 .schools-wraper .schools {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   flex-wrap: wrap;
   margin-top: 20px;
+}
+
+.schools-wraper .schools .card-wraper {
+  margin: 20px 40px 40px 0;
 }
 
 .schools-length {
@@ -57,4 +61,8 @@
   font-weight: 900;
   font-size: 25px;
   display: block;
+}
+
+CardSchool {
+  margin-bottom: 10px;
 }
