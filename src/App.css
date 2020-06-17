@@ -2,6 +2,7 @@
     --primary-color: #9973e2;
     --detail-color: #71c5d8;
     --text-color: #444444;
+    --text-light: #afadad;
 }
 
 .App {
@@ -11,7 +12,7 @@
   justify-content: space-between;
 }
 
-.btn, .btn-outline, .btn-disabled {
+.btn, .btn-outline, .btn-disable {
     display: flex;
     justify-content: space-around;
     background-image: linear-gradient(90deg,#9b75e6, #654186);
@@ -30,13 +31,13 @@
 
 .btn-outline {
     background-image: none;
-    border: 2px solid var(--text-clor);
-    color: var(--text-clor);
+    border: 2px solid var(--text-light);
+    color: var(--text-light) !important;
     background-color: transparent;
 }
 
 .btn-disabled {
-    background: var(--text-clor);
+    background: var(--text-color);
     cursor: unset;
 }
 

@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .schools-length {
@@ -52,7 +53,7 @@
 }
 
 .length {
-  color: var(--detail-color);;
+  color: var(--primary-color);
   font-weight: 900;
   font-size: 25px;
   display: block;

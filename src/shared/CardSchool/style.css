@@ -1,0 +1,76 @@
+.card-school {
+  width: 300px;
+  background: #ffffff;
+  transition: 0.3s linear;
+  cursor: pointer;
+  max-height: 300px;
+  -webkit-box-shadow: 2px 12px 16px -10px rgba(0,0,0,0.23);
+-moz-box-shadow: 2px 12px 16px -10px rgba(0,0,0,0.23);
+box-shadow: 2px 12px 16px -10px rgba(0,0,0,0.23); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-school .card-header {
+  height: 40%;
+  width: 100%;
+}
+
+.card-school .card-header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-school .card-body {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.card-body .inital {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-image: linear-gradient(90deg,#9b75e6, #654186);
+  position: absolute;
+  right: 10px;
+  top: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .inital {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+} 
+
+.card-body .description h3, h4, h5 {
+  color: var(--text-color);
+}
+
+.card-body .description h4, h5 {
+  font-weight: 500;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.card-body .description h5 {
+  font-size: 14px;
+  padding-top: 6px;
+}
+
+.card-body buttom {
+  width: 70%;
+}
