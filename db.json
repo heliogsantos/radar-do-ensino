@@ -1,0 +1,41 @@
+{
+  "school": [
+    {
+      "id": "1",
+      "name": "Escola Arvore",
+      "address": {
+        "city": "Santos",
+        "uf": "SP",
+        "neighborhood": "Tucuruvi",
+        "street": "Rua Jóse Osvaldo"
+      }
+    },{
+      "id": "1",
+      "name": "Escola Canta Galo",
+      "address": {
+        "city": "Santos",
+        "uf": "SP",
+        "neighborhood": "Morro Alto",
+        "street": "Rua Jóse Osvaldo"
+      }
+    },{
+      "id": "2",
+      "name": "Escola Jóse",
+      "address": {
+        "city": "São Paulo",
+        "uf": "SP",
+        "neighborhood": "Osasco",
+        "street": "Rua Jóse Osvaldo"
+      }
+    },{
+      "id": "3",
+      "name": "Escola Betim",
+      "address": {
+        "city": "Praia Grande",
+        "uf": "SP",
+        "neighborhood": "Lapa",
+        "street": "Rua Jóse Osvaldo"
+      }
+    }
+  ]
+}

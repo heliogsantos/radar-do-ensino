@@ -1,29 +1,50 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './style.css'
 import Card from '../../components/Card'
 import Founder from '../../shared/Founder'
+import Api from '../../services/api'
 
 const Home = () => {
 
   const [search, setSearch] = useState('')
+  const [schools, setSchools] = useState([])
 
   const handleSearch = (event) => {
     event.preventDefault()
   }
 
-  const handleSearchText = (event) => setSearch(event.target.value)
+  const serachNameEndCity = (school, searchSchool) => 
+    school.address.neighborhood.toLowerCase().includes(searchSchool) || 
+    school.address.city.toLowerCase().includes(searchSchool)
+
+  const getApiSchols = async (searchSchool) => {
+    const school = await (await Api.get('/school')).data.filter(item => serachNameEndCity(item, searchSchool))
+    return setSchools(school)
+  }
+
+  const searchSchools = (event) => {
+    setSearch(event.target.value)
+    search.length >= 4 ? getApiSchols(search) : setSchools([])
+  }
 
   return (
     <div className="wraper-home padding-default">
       <div className="call padding-default">
         <h1>Encontre a escola perfeita <br/>
-        e m qualquer região</h1>
+        em qualquer região</h1>
       </div>
       <div className="padding-default">
         <form>
           <div className="field">
-            <input onChange={handleSearchText} type="text" placeholder="Cidade ou bairro"/>
+            <input onChange={searchSchools} type="text" placeholder="Cidade ou bairro"/>
+            <div className="result-search">
+                <ul>
+                  {schools.length ? schools.map((item, index) => (
+                    <li key={index}><strong>{item.address.city}</strong> {item.name}</li>
+                  )) : null}
+                </ul>
+            </div>
           </div>
           <button onClick={handleSearch} type="submit" className="btn btn-animation">buscar</button>
         </form>

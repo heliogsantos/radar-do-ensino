@@ -11,17 +11,17 @@ form .btn {
 
 form .field input {
   border: 1px solid var(--text-color);
-  border-radius: 4px;
+  border-radius: 2px;
   width: 100%;
   resize: none;
   padding: 25px 20px 25px 20px;
-  border-radius: 4px;
   outline: none;
   max-width: 500px;
   width: 470px;
 }
 
 .field  {
+  position: relative;
   display: flex;
 }
 
@@ -61,3 +61,32 @@ form .field input {
  .founder-content {
    padding: 70px 0;
  }
+
+ .result-search {
+  position: absolute;
+  padding: 10px 20px;
+  width: 100%;
+  background: #ffffff;
+  top: 70px;
+  left: 0;
+  z-index: 10;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 18px 24px -21px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 18px 24px -21px rgba(0,0,0,0.75);
+  box-shadow: 2px 18px 24px -21px rgba(0,0,0,0.75);
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.result-search ul li {
+  line-height: 2;
+  cursor: pointer;
+  font-weight: 300;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.result-search ul li strong {
+  font-weight: 700;
+  font-size: 15px;
+}
