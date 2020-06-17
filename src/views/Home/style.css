@@ -78,7 +78,7 @@ form .field input {
   max-height: 200px;
 }
 
-.result-search ul li {
+.result-search ul a {
   line-height: 2;
   cursor: pointer;
   font-weight: 300;
@@ -86,7 +86,7 @@ form .field input {
   font-size: 14px;
 }
 
-.result-search ul li strong {
+.result-search ul a strong {
   font-weight: 700;
   font-size: 15px;
 }

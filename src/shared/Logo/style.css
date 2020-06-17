@@ -5,6 +5,7 @@
 }
 
 .logo span, .logo span strong {
+  cursor: pointer;
     font-size: 22px;
     font-weight: 900;
     position: relative;

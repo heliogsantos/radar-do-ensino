@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import './style.css'
 import Card from '../../components/Card'
 import Founder from '../../shared/Founder'
 import Api from '../../services/api'
+import Header from '../../shared/Header'
+import Footer from '../../shared/Footer'
 
 const Home = () => {
 
@@ -29,35 +32,39 @@ const Home = () => {
   }
 
   return (
-    <div className="wraper-home padding-default">
-      <div className="call padding-default">
-        <h1>Encontre a escola perfeita <br/>
-        em qualquer região</h1>
-      </div>
-      <div className="padding-default">
-        <form>
-          <div className="field">
-            <input onChange={searchSchools} type="text" placeholder="Cidade ou bairro"/>
-            <div className="result-search">
-                <ul>
-                  {schools.length ? schools.map((item, index) => (
-                    <li key={index}><strong>{item.address.city}</strong> {item.name}</li>
-                  )) : null}
-                </ul>
+    <div className="wraper-home">
+      <Header />
+      <div className="content padding-default">
+        <div className="call padding-default">
+          <h1>Encontre a escola perfeita <br/>
+          em qualquer região</h1>
+        </div>
+        <div className="padding-default">
+          <form>
+            <div className="field">
+              <input onInput={searchSchools} type="text" placeholder="Cidade ou bairro"/>
+              <div className="result-search">
+                  <ul>
+                    {schools.length ? schools.map((item, index) => (
+                      <li key={index}><Link to={`/city/${item.address.city}/schools/${item.address.neighborhood}`}><strong>{item.address.city}</strong> {item.address.neighborhood}</Link></li>
+                    )) : null}
+                  </ul>
+              </div>
             </div>
-          </div>
-          <button onClick={handleSearch} type="submit" className="btn btn-animation">buscar</button>
-        </form>
+            <button onClick={handleSearch} type="submit" className="btn btn-animation">buscar</button>
+          </form>
+        </div>
+        <Card />
+        <div className="sub-title">
+          <h4>Aprenda <br/>
+          tudo o que quiser</h4>
+          <p>Torne-se um mestre na arte da cozinha ou uma estrela nos palcos! Torne-se um mestre na arte da cozinha ou uma estrela.</p>
+        </div>
+        <div className="founder-content">
+          <Founder />
+        </div>
       </div>
-      <Card />
-      <div className="sub-title">
-        <h4>Aprenda <br/>
-        tudo o que quiser</h4>
-        <p>Torne-se um mestre na arte da cozinha ou uma estrela nos palcos! Torne-se um mestre na arte da cozinha ou uma estrela.</p>
-      </div>
-      <div className="founder-content">
-        <Founder />
-      </div>
+      <Footer />
     </div>
   )
 }

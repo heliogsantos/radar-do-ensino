@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 import Menu from './Menu';
@@ -10,7 +11,9 @@ const Header = () => {
 
   return (
     <header>
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <ul>    
           {
             Menu.map((listMenu, index) => (
