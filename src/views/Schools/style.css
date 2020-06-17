@@ -1,10 +1,59 @@
 .schools-wraper {
   width: 100%;
+  margin-top: 100px;
+  padding: 0 20px;
 }
 
-.card-school {
-    width: 280px;
-    height: 400px;
-    background-image: linear-gradient(90deg,#9b75e6, #654186);
-    border-radius: 4px;
+.schools-wraper .schools {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.schools-length {
+  width: 300px;
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  border-radius: 3px;
+  flex-direction: row;
+  align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 0px 37px -7px rgba(0,0,0,0.16);
+  -moz-box-shadow: 1px 0px 37px -7px rgba(0,0,0,0.16);
+  box-shadow: 1px 0px 37px -7px rgba(0,0,0,0.16);
+}
+
+.box-left {
+  display: flex;
+  align-items: center;
+}
+
+.box-left p {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  top: -4px;
+}
+
+.check {
+  width: 34px;
+  height: 34px;
+  background-image: linear-gradient(90deg,#aee6f3, var(--detail-color));
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check img {
+  width: 50%;
+}
+
+.length {
+  color: var(--detail-color);;
+  font-weight: 900;
+  font-size: 25px;
+  display: block;
 }
