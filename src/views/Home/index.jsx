@@ -5,8 +5,6 @@ import './style.css'
 import Card from '../../components/Card'
 import Founder from '../../shared/Founder'
 import Api from '../../services/api'
-import Header from '../../shared/Header'
-import Footer from '../../shared/Footer'
 
 const Home = () => {
 
@@ -33,7 +31,6 @@ const Home = () => {
 
   return (
     <div className="wraper-home">
-      <Header />
       <div className="content padding-default">
         <div className="call padding-default">
           <h1>Encontre a escola perfeita <br/>
@@ -46,7 +43,7 @@ const Home = () => {
               <div className="result-search">
                   <ul>
                     {schools.length ? schools.map((item, index) => (
-                      <li key={index}><Link to={`/city/${item.address.city}/schools/${item.address.neighborhood}`}><strong>{item.address.city}</strong> {item.address.neighborhood}</Link></li>
+                      <li key={index}><Link to={`schools/${item.address.neighborhood}`}><strong>{item.address.city}</strong> {item.address.neighborhood}</Link></li>
                     )) : null}
                   </ul>
               </div>
@@ -64,7 +61,6 @@ const Home = () => {
           <Founder />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

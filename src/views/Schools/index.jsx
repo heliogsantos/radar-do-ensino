@@ -1,15 +1,16 @@
 import React from 'react'
+import { useParams } from "react-router-dom";
 
 import './style.css'
-import Header from '../../shared/Header'
-import Footer from '../../shared/Footer'
 
 const Schools = () => {
+  const { id } = useParams();
   return (
-    <div className="App">
-        <Header />
-          teste
-        <Footer />
+    <div className="schools-wraper">
+        <div className="card-school"></div>
+        <div className="card-school"></div>
+        <div className="card-school"></div>
+        <div className="card-school"></div>
     </div>
   );
 }

@@ -11,9 +11,7 @@ const Header = () => {
 
   return (
     <header>
-        <Link to="/">
-          <Logo />
-        </Link>
+        <Logo />
         <ul>    
           {
             Menu.map((listMenu, index) => (

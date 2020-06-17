@@ -1,0 +1,10 @@
+.schools-wraper {
+  width: 100%;
+}
+
+.card-school {
+    width: 280px;
+    height: 400px;
+    background-image: linear-gradient(90deg,#9b75e6, #654186);
+    border-radius: 4px;
+}
