@@ -20,7 +20,7 @@ const Home = () => {
     school.address.city.toLowerCase().includes(searchSchool)
 
   const getApiSchols = async (searchSchool) => {
-    const school = await (await Api.get('/school')).data.filter(item => serachNameEndCity(item, searchSchool))
+    const school = await (await Api.get('/schools')).data.filter(item => serachNameEndCity(item, searchSchool))
     return setSchools(school)
   }
 

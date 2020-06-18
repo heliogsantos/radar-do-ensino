@@ -9,7 +9,7 @@ const CardSchool = (props) => {
         <img src={props.image} alt="Escola Tucuruvi"/>
       </div>
       <div className="card-body">
-          <div className="inital">C</div>
+          <div className="inital">{props.name[0]}</div>
           <div className="description">
             <h3>{props.name}</h3>
             <h4>{props.schedule}</h4>

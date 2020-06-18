@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
 
 import Check from '../../assets/check.svg'
-import BannerBase from '../../assets/banner1.png'
 import './style.css'
 import CardSchool from '../../shared/CardSchool';
+import Api from '../../services/api' 
 
 const Schools = () => {
 
+  const [schools, setSchools] = useState([])
   const { id } = useParams();
+
+  useEffect(() => {
+    Api.get('/schools').then((response) => setSchools(response.data.filter(school => school.address.neighborhood === id)));
+  },[]);
 
   return (
     <div className="schools-wraper">
@@ -22,24 +27,11 @@ const Schools = () => {
           <span className="length">20</span>
         </div>
         <div className="schools">
-            <div className="card-wraper">
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
-            <div className="card-wraper"> 
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
-            <div className="card-wraper">
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
-            <div className="card-wraper">
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
-            <div className="card-wraper">
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
-            <div className="card-wraper">
-              <CardSchool image={BannerBase} name="Colegio Atena" schedule="8:00 as 18:00" email="contato@colegioatena.com.br"/>
-            </div>
+          <div className="card-wraper">
+            {schools.map((school, index) => (
+              <CardSchool key={index} image={school.banner} name={school.name} schedule={school.houer} email={school.email}/>
+            ))}
+          </div>
         </div>
     </div>
   );

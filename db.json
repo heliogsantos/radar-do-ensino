@@ -1,8 +1,11 @@
 {
-  "school": [
+  "schools": [
     {
       "id": "1",
       "name": "Escola Arvore",
+      "houer":"8:00 as 18:00",
+      "email": "escola.mock.com.br",
+      "banner": "/static/media/banner1.5b4fe553.png",
       "address": {
         "city": "Santos",
         "uf": "SP",
@@ -10,8 +13,11 @@
         "street": "Rua Jóse Osvaldo"
       }
     },{
-      "id": "1",
+      "id": "2",
       "name": "Escola Canta Galo",
+      "houer":"8:00 as 18:00",
+      "email": "escola.mock.com.br",
+      "banner": "/static/media/banner1.5b4fe553.png",
       "address": {
         "city": "Santos",
         "uf": "SP",
@@ -19,8 +25,11 @@
         "street": "Rua Jóse Osvaldo"
       }
     },{
-      "id": "2",
+      "id": "3",
       "name": "Escola Jóse",
+      "houer":"8:00 as 18:00",
+      "email": "escola.mock.com.br",
+      "banner": "/static/media/banner1.5b4fe553.png",
       "address": {
         "city": "São Paulo",
         "uf": "SP",
@@ -28,8 +37,11 @@
         "street": "Rua Jóse Osvaldo"
       }
     },{
-      "id": "3",
+      "id": "4",
       "name": "Escola Betim",
+      "houer":"8:00 as 18:00",
+      "email": "escola.mock.com.br",
+      "banner": "/static/media/banner1.5b4fe553.png",
       "address": {
         "city": "Praia Grande",
         "uf": "SP",
